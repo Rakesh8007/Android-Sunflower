@@ -19,8 +19,8 @@ buildscript {
     ext {
         // Sdk and tools
         compileSdkVersion = 31
-        minSdkVersion = 21
-        targetSdkVersion = 30
+        minSdkVersion = 17
+        targetSdkVersion = 25
 
          // App dependencies
         activityComposeVersion = '1.3.0-rc02'
