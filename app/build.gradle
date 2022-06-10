@@ -22,6 +22,10 @@ apply plugin: 'dagger.hilt.android.plugin'
 apply plugin: 'androidx.navigation.safeargs.kotlin'
 
 android {
+    lintOptions {
+        baseline(file("lint-baseline.xml"))
+    }
+
     compileSdkVersion rootProject.compileSdkVersion
     buildFeatures {
         dataBinding true
