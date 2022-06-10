@@ -22,9 +22,11 @@ apply plugin: 'dagger.hilt.android.plugin'
 apply plugin: 'androidx.navigation.safeargs.kotlin'
 
 android {
-    lintOptions {
-        baseline(file("lint-baseline.xml"))
-    }
+    //...
+	      lintOptions {
+  	      abortOnError false
+	   	         }
+
 
     compileSdkVersion rootProject.compileSdkVersion
     buildFeatures {
